@@ -1,0 +1,154 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(124, 177, 243);
+}
+.c1{
+    position: absolute;
+    height: 100px;
+    right: -200px;
+    top: 40px;
+    animation: plan 16s forwards infinite ease-in;
+}
+.c2{
+    position: absolute;
+    height: 80px;
+    right: -200px;
+    top: 140px;
+    animation: plan 20s forwards infinite ease-in 2s;
+}
+.bino2 {
+    position: absolute;
+    width: 120px;
+    bottom: 153px;
+    right: 50px;
+}
+
+.H {
+    position: absolute;
+    left: 130px;
+    bottom: 155px;
+    width: 120px;
+}
+
+.road {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -20px;
+}
+
+.img {
+    position: absolute;
+    height: 50px;
+    left: 35px;
+    bottom: 170px;
+    margin: 640px 0px 0px 100px;
+    z-index: 1;
+    animation: move-my 16s forwards ease;
+    animation-iteration-count: infinite;
+}
+
+.plan {
+    position: absolute;
+    height: 60px;
+    right: -140px;
+    top: 100px;
+    animation: plan 7s forwards infinite ease-in ;
+}
+
+.car {
+    position: absolute;
+    height: 60px;
+    left: -100px;
+    bottom: 80px;
+    animation: car 10s forwards infinite ease-in;
+}
+
+.picap {
+    position: absolute;
+    height: 60px;
+    right: -150px;
+    bottom: 5px;
+    animation: picap 10s forwards infinite ease-in;
+}
+
+@keyframes picap {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-930%);
+    }
+
+    60% {
+        transform: translateX(-930%);
+    }
+
+    100% {
+        transform: translateX(-1600%);
+    }
+}
+
+@keyframes car {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(415%);
+    }
+
+    60% {
+        transform: translateX(415%);
+    }
+
+    100% {
+        transform: translateX(1600%);
+    }
+}
+
+@keyframes plan {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-1800%);
+    }
+}
+
+
+
+@keyframes move-my {
+    0% {
+        transform: translateX(-300%) translateY(-400%);
+    }
+
+    10% {
+        transform: translateX(0%) translateY(0%);
+    }
+
+    25% {
+        transform: translateX(100%) translateY(-50%);
+    }
+
+    50% {
+        transform: translateX(200%) translateY(-500%);
+        rotate: 30deg;
+    }
+
+    75% {
+        transform: translateX(1200%) translateY(-500%);
+        rotate: 0deg;
+    }
+
+    90% {
+        transform: translateX(1200%) translateY(-294%);
+    }
+
+    100% {
+        transform: translateX(1380%) translateY(-400%);
+    }
+}
